@@ -1,0 +1,45 @@
+# --- MATLAB ---
+*.asv
+*.slxc
+*.mex*
+*.mat
+log.txt
+*.mdl
+*.slx
+slprj/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.pytest_cache/
+.ipynb_checkpoints/
+
+
+# --- Web Dev (MERN) ---
+node_modules/
+.DS_Store
+npm-debug.log*
+yarn-error.log*
+.next/
+out/
+build/
+coverage/
+*.log
+.eslintcache
+
+# --- Misc / IDE ---
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# --- R / RStudio ---
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
