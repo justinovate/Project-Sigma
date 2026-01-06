@@ -1,5 +1,6 @@
 # ================================
-# R BASICS CHEATSHEET
+# R BASICS CHEATSHEET 📉
+# Project Sigma: Engineering Data Analysis
 # ================================
 
 # ----------------
@@ -22,7 +23,7 @@ class(name)
 # ----------------
 v <- c(1, 2, 3, 4, 5)
 
-v[1]  # indexing (1-based)
+v[1] # indexing (Note: R is 1-based, unlike Python's 0-based)
 length(v)
 sum(v)
 mean(v)
@@ -38,8 +39,8 @@ rep(1, times = 5)
 # ----------------
 m <- matrix(1:6, nrow = 2, ncol = 3)
 
-m[1,2]  # row, column
-t(m)    # transpose
+m[1, 2] # row, column
+t(m) # transpose
 dim(m)
 
 # ----------------
@@ -54,7 +55,7 @@ lst <- list(
 lst$numbers
 
 # ----------------
-# 7. Data Frames
+# 7. Data Frames (Crucial for CSVs)
 # ----------------
 df <- data.frame(
   id = c(1, 2, 3),
@@ -63,10 +64,10 @@ df <- data.frame(
 )
 
 head(df)
-str(df)
+str(df) # Check structure (like .info() in Pandas)
 
 df$score
-df[df$score > 80, ]
+df[df$score > 80, ] # Filtering
 
 # ----------------
 # 8. Control Flow
@@ -91,18 +92,19 @@ add_numbers <- function(a, b) {
 add_numbers(2, 3)
 
 # ----------------
-# 10. Apply Functions
+# 10. Apply Functions (Vectorization)
 # ----------------
-apply(m, 1, sum)  # rows
-apply(m, 2, sum)  # columns
+apply(m, 1, sum) # 1 = rows
+apply(m, 2, sum) # 2 = columns
 
 lapply(lst, class)
 
 # ----------------
 # 11. Basic Plotting
 # ----------------
-plot(c, type = "b", col = "blue")
-hist(v)
+# Corrected: using 'v' instead of 'c'
+plot(v, type = "b", col = "blue", main = "Vector Plot")
+hist(v, col = "lightblue")
 
 # ----------------
 # 12. Reading & Writing Data
