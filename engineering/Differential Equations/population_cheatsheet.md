@@ -10,23 +10,23 @@ In population problems, we study **how a population changes over time**.
 
 We usually write:
 
-\[
+$$
 P(t) = \text{population at time } t
-\]
+$$
 
 ---
 
 ## 2. Key Variables & Notation (Very Important)
 
-| Symbol            | Meaning                                            |
-| ----------------- | -------------------------------------------------- |
-| \(P(t)\)          | Population at time \(t\)                           |
-| \(\frac{dP}{dt}\) | Rate of change of population                       |
-| \(t\)             | Time (years, months, days, etc.)                   |
-| \(P_0\)           | Initial population (population at \(t = 0\))       |
-| \(k\)             | Growth or decay constant                           |
-| \(r\)             | Growth rate (often same role as \(k\))             |
-| \(K\)             | Carrying capacity (maximum sustainable population) |
+| Symbol          | Meaning                                            |
+| --------------- | -------------------------------------------------- |
+| $P(t)$          | Population at time $t$                             |
+| $\frac{dP}{dt}$ | Rate of change of population                       |
+| $t$             | Time (years, months, days, etc.)                   |
+| $P_0$           | Initial population (population at $t = 0$)         |
+| $k$             | Growth or decay constant                           |
+| $r$             | Growth rate (often same role as $k$)               |
+| $K$             | Carrying capacity (maximum sustainable population) |
 
 ---
 
@@ -47,9 +47,9 @@ Use this when:
 
 ### 🔹 Differential Equation
 
-\[
+$$
 \frac{dP}{dt} = kP
-\]
+$$
 
 ---
 
@@ -61,40 +61,40 @@ Use this when:
 
 ### 🔹 General Solution
 
-\[
+$$
 P(t) = P_0 e^{kt}
-\]
+$$
 
 ---
 
 ### 🔹 Variable Explanation
 
-| Variable  | Meaning                            |
-| --------- | ---------------------------------- |
-| \(P(t)\)  | Population at time \(t\)           |
-| \(P_0\)   | Initial population                 |
-| \(k > 0\) | Growth constant                    |
-| \(t\)     | Time                               |
-| \(e\)     | Euler’s number (\(\approx 2.718\)) |
+| Variable | Meaning                          |
+| -------- | -------------------------------- |
+| $P(t)$   | Population at time $t$           |
+| $P_0$    | Initial population               |
+| $k > 0$  | Growth constant                  |
+| $t$      | Time                             |
+| $e$      | Euler’s number ($\approx 2.718$) |
 
 ---
 
-### 🔹 Interpretation of \(k\)
+### 🔹 Interpretation of $k$
 
-| Value of \(k\) | Meaning           |
-| -------------- | ----------------- | --- | ------------- |
-| \(k > 0\)      | Population grows  |
-| \(k < 0\)      | Population decays |
-| Larger \(      | k                 | \)  | Faster change |
+| Value of $k$ | Meaning           |
+| ------------ | ----------------- | --- | ------------- |
+| $k > 0$      | Population grows  |
+| $k < 0$      | Population decays |
+| Larger $     | k                 | $   | Faster change |
 
 ---
 
 ### 🧠 Common Word Problem Steps
 
-1. Identify **initial population** \(P_0\)
-2. Write the DE: \(\frac{dP}{dt} = kP\)
-3. Use given information to find \(k\)
-4. Plug into \(P(t) = P_0 e^{kt}\)
+1. Identify **initial population** $P_0$
+2. Write the DE: $\frac{dP}{dt} = kP$
+3. Use given information to find $k$
+4. Plug into $P(t) = P_0 e^{kt}$
 5. Evaluate at required time
 
 ---
@@ -112,11 +112,11 @@ P(t) = P_0 e^{kt}
 
 ### 🔹 Formula
 
-\[
+$$
 P(t) = P_0 e^{kt}, \quad k < 0
-\]
+$$
 
-Same formula as growth — **only the sign of \(k\) changes**.
+Same formula as growth — **only the sign of $k$ changes**.
 
 ---
 
@@ -137,31 +137,31 @@ Use this when:
 
 ### 🔹 Differential Equation
 
-\[
+$$
 \frac{dP}{dt} = kP\left(1 - \frac{P}{K}\right)
-\]
+$$
 
 ---
 
 ### 🔹 Meaning
 
 - Population grows fast when small
-- Growth slows as \(P \to K\)
-- Population **never exceeds \(K\)**
+- Growth slows as $P \to K$
+- Population **never exceeds $K$**
 
 ---
 
 ### 🔹 Logistic Solution Formula
 
-\[
+$$
 P(t) = \frac{K}{1 + Ae^{-kt}}
-\]
+$$
 
 where
 
-\[
+$$
 A = \frac{K - P_0}{P_0}
-\]
+$$
 
 ---
 
@@ -169,10 +169,10 @@ A = \frac{K - P_0}{P_0}
 
 | Variable | Meaning                         |
 | -------- | ------------------------------- |
-| \(K\)    | Carrying capacity               |
-| \(P_0\)  | Initial population              |
-| \(k\)    | Growth constant                 |
-| \(A\)    | Constant from initial condition |
+| $K$      | Carrying capacity               |
+| $P_0$    | Initial population              |
+| $k$      | Growth constant                 |
+| $A$      | Constant from initial condition |
 
 ---
 
@@ -180,9 +180,9 @@ A = \frac{K - P_0}{P_0}
 
 | Population Size | Behavior                |
 | --------------- | ----------------------- |
-| \(P \ll K\)     | Near exponential growth |
-| \(P = K/2\)     | Maximum growth rate     |
-| \(P \to K\)     | Growth slows to zero    |
+| $P \ll K$       | Near exponential growth |
+| $P = K/2$       | Maximum growth rate     |
+| $P \to K$       | Growth slows to zero    |
 
 ---
 
@@ -199,25 +199,24 @@ A = \frac{K - P_0}{P_0}
 
 ### 🔹 Differential Equation
 
-\[
+$$
 \frac{dP}{dt} = kP + C
-\]
+$$
 
 Where:
 
-- \(C > 0\): immigration
-- \(C < 0\): harvesting
+- $C > 0$: immigration
+- $C < 0$: harvesting
 
 ---
 
 ### 🔹 General Solution
 
-\[
-P(t) = Ce^{-kt} + \frac{C}{k}
-\quad \text{(after solving)}
-\]
+$$
+P(t) = C_1 e^{-kt} + \frac{C}{k} \quad \text{(after solving)}
+$$
 
-(Solution usually found using **integrating factor**)
+_(Note: Usually requires an integrating factor)_
 
 ---
 
@@ -227,7 +226,7 @@ P(t) = Ce^{-kt} + \frac{C}{k}
 
 1. **Define the variable**
 
-   - Let \(P(t)\) = population at time \(t\)
+   - Let $P(t)$ = population at time $t$
 
 2. **Identify the model**
 
@@ -239,7 +238,7 @@ P(t) = Ce^{-kt} + \frac{C}{k}
 
 4. **Use initial condition**
 
-   - Given as “initially” or “at \(t=0\)”
+   - Given as “initially” or “at $t=0$”
 
 5. **Solve for constants**
 
@@ -256,17 +255,15 @@ P(t) = Ce^{-kt} + \frac{C}{k}
 - ❌ Mixing time units (years vs months)
 - ❌ Using exponential model when carrying capacity is mentioned
 - ❌ Forgetting initial condition
-- ❌ Sign error in \(k\)
+- ❌ Sign error in $k$
 
 ---
 
 ## 9. Quick Comparison Table
 
-| Model              | Formula                        | When to Use             |
-| ------------------ | ------------------------------ | ----------------------- |
-| Exponential Growth | \(P = P_0 e^{kt}\)             | Unlimited growth        |
-| Exponential Decay  | \(P = P_0 e^{kt}\)             | Decline                 |
-| Logistic           | \(P = \frac{K}{1 + Ae^{-kt}}\) | Limited resources       |
-| Immigration        | \(\frac{dP}{dt} = kP + C\)     | Constant inflow/outflow |
-
----
+| Model              | Formula                      | When to Use             |
+| ------------------ | ---------------------------- | ----------------------- |
+| Exponential Growth | $P = P_0 e^{kt}$             | Unlimited growth        |
+| Exponential Decay  | $P = P_0 e^{kt}$             | Decline                 |
+| Logistic           | $P = \frac{K}{1 + Ae^{-kt}}$ | Limited resources       |
+| Immigration        | $\frac{dP}{dt} = kP + C$     | Constant inflow/outflow |
