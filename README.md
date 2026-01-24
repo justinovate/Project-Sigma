@@ -30,7 +30,7 @@ A 365-day technical log focused on the intersection of **Computational Math**, *
 ## 🏁 Current Milestones
 
 - [x] **Phase 0:** Environment & Repository Setup
-- [ ] **Phase 1:** Engineering & Python Foundations (In Progress)
+- [x] **Phase 1:** Engineering & Python Foundations (In Progress)
 - [ ] **Phase 2:** Full-Stack Integration & DSA
 - [ ] **Phase 3:** AI/ML Implementation
 
