@@ -8,10 +8,15 @@ def main():
         print("dinner time")
 
 def convert(time):
+    marker = time.split()[-1]
+    time = time.replace(marker, "").strip()
     hours, minutes = map(float, time.split(":"))
     minutes /= 60
+    if marker == "p.m." and hours != 12:
+        hours += 12
+    elif marker == "a.m." and hours == 12:
+        hours = 0
     return hours + minutes
-
-
+    
 if __name__ == "__main__":
     main()
