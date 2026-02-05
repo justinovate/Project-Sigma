@@ -19,7 +19,6 @@ A 365-day technical log focused on the intersection of **Computational Math**, *
 
 ## 📂 Repository Structure
 
-- [**Logs**](./logs/) — Daily progress journal (1-365)
 - [**Engineering**](./engineering/) — MATLAB, Physics & Math simulations
 - [**Python**](./python-core/) — Scripts, automation & data analysis
 - [**Web Dev**](./web-dev/) — MERN stack components & apps
@@ -35,8 +34,3 @@ A 365-day technical log focused on the intersection of **Computational Math**, *
 - [ ] **Phase 3:** AI/ML Implementation
 
 ---
-
-## 📜 Log Policy
-
-- **Daily:** Atomic commits to `/logs` and relevant sub-folders.
-- **Weekly:** Progress bar and Milestone synchronization.
