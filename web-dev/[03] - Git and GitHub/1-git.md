@@ -68,3 +68,21 @@ git log
 git log --oneline
 ```
 
+## Reverting vs Resetting
+
+1. Reverting commits
+
+- Creating a new commit that undo the changes from the previous commit
+
+```bash
+git revert --no-edit [problematic-commit-hash]
+```
+
+2. Resetting commits
+
+- Delete the last commit but it will put all the changes in the working area.
+- You have a choice if you want to modify the code or delete the code entirely.
+
+```bash
+git reset [second-to-the-last-commit-hash / HEAD~1]
+```
