@@ -107,4 +107,18 @@ git branch [name-of-the-branch]
 git switch [name-of-the-branch]
 ```
 
+## Merging
 
+1. Merging branches
+
+```bash
+git merge [name-of-the-branch]
+```
+
+2. Deleting branches
+
+- Note: You should not be in the branch that you want delete
+
+```bash
+git branch -d [name-of-the-branch]
+```
